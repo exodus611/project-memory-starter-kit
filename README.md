@@ -27,6 +27,10 @@ The full project record belongs in the repository. `NOTES.md` is the map and han
 8. Use `CLOSING_ROUTINE.md` before the session ends; update the handoff and any changed project artifacts.
 9. Read `SECURITY_CHECKLIST.md` before committing anything new.
 
+## Who writes what
+
+You fill in only three sections by hand, once, at setup — **Goal and definition of done**, **Current state**, and **Repository map** — in your own words. From the first session on, the AI drafts every update (decisions, failures, state, next tasks, closing reports) when you ask it to checkpoint or close. You review, correct, and commit. You don't rebuild the note by hand session after session.
+
 ## What “automatic” means here
 
 The starter kit provides a repeatable, AI-assisted protocol. The AI can draft updates when the human asks for a checkpoint or closing report. A connected agent can prepare repository edits if it has approved access. The human still reviews the understanding and diff by default.

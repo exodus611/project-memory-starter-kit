@@ -1,5 +1,11 @@
 # [Project name]
 
+## Who writes what — read this first
+
+You fill in only **three sections by hand, once, at setup**: `Goal and definition of done`, `Current state`, and `Repository map`. Write them in your own words.
+
+From the first AI session on, **the AI drafts every update** — decisions, failures, state changes, known problems, next tasks, and closing reports — when you ask it to checkpoint or close (`CHECKPOINT_MESSAGE.md`, `CLOSING_ROUTINE.md`). Your job each time is short: read the draft, correct anything wrong, and commit. You are not expected to maintain or re-systematize these sections by hand.
+
 ## Goal and definition of done
 [What does this project accomplish? What does finished look like? Write one to three specific sentences.]
 
