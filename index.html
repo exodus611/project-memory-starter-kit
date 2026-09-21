@@ -4,71 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Project Memory Starter Kit — from "The Project Has a Memory"</title>
-<meta name="description" content="Free, copy-ready starter kit for the repository-first project handoff method: NOTES.md map, opening/working/checkpoint/closing prompts, AI workflow guide, agent instructions, and security checklist.">
+<meta name="description" content="One file, one block. Fill in three lines once; paste one message per AI session; the AI runs the rest. Free companion to the book The Project Has a Memory.">
 <style>
-  :root { --bg:#0D1117; --panel:#161B22; --edge:#30363D; --ink:#E6EDF3; --muted:#8B949E; --accent:#58A6FF; }
+  :root { --bg:#0D1117; --panel:#161B22; --edge:#30363D; --ink:#E6EDF3; --muted:#8B949E; --accent:#58A6FF; --green:#4ADA71; }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
   .wrap { max-width:760px; margin:0 auto; padding:48px 20px 64px; }
   .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); border:1px solid var(--edge); border-radius:999px; padding:4px 12px; margin-bottom:20px; }
-  h1 { font-size:30px; line-height:1.25; margin:0 0 12px; }
-  .sub { color:var(--muted); font-size:17px; margin:0 0 28px; }
+  h1 { font-size:32px; line-height:1.22; margin:0 0 12px; }
+  .sub { color:var(--muted); font-size:18px; margin:0 0 28px; }
   .card { background:var(--panel); border:1px solid var(--edge); border-radius:10px; padding:24px; margin:16px 0; }
-  .cta { display:inline-block; background:var(--accent); color:#0B1220; font-weight:600; text-decoration:none; border-radius:8px; padding:12px 22px; margin:6px 8px 6px 0; }
+  .cta { display:inline-block; background:var(--green); color:#0B1220; font-weight:700; text-decoration:none; border-radius:8px; padding:14px 26px; margin:6px 8px 6px 0; }
   .cta.ghost { background:transparent; color:var(--ink); border:1px solid var(--edge); }
+  .onefile { font-size:20px; font-weight:700; color:var(--green); }
   ul { padding-left:20px; margin:10px 0; }
   li { margin:6px 0; }
   a { color:var(--accent); }
-  code, .file { font-family:ui-monospace,SFMono-Regular,"Cascadia Mono",Consolas,monospace; background:#0B1220; border:1px solid var(--edge); border-radius:6px; padding:1px 6px; font-size:14px; }
-  table { width:100%; border-collapse:collapse; font-size:14px; }
-  th,td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--edge); vertical-align:top; }
-  th { color:var(--muted); font-weight:600; }
+  code, .file { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; background:#0B1220; border:1px solid var(--edge); border-radius:6px; padding:1px 6px; font-size:14px; }
   .foot { margin-top:36px; color:var(--muted); font-size:13px; border-top:1px solid var(--edge); padding-top:18px; }
+  .small { color:var(--muted); font-size:13px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <span class="badge">Free companion to the book</span>
   <h1>Project Memory Starter Kit</h1>
-  <p class="sub">Give your projects a memory that never forgets — the copy-ready files for the repository-first handoff method from <em>The Project Has a Memory</em>.</p>
+  <p class="sub">One file. One block. Fill in three lines once — then paste one message per AI session, and the AI runs the rest.</p>
 
   <div class="card">
-    <a class="cta" href="project-memory-starter-kit.zip" download>Download the kit (ZIP)</a>
-    <a class="cta ghost" href="https://exodus611.github.io/project-memory-starter-kit/START_HERE.md">Read START_HERE (the one block)</a>
+    <a class="cta" href="project-memory-starter-kit.zip" download>&#8595; Download (1 file)</a>
+    <a class="cta ghost" href="START_HERE.md">Read START_HERE online</a>
+    <p class="small">The ZIP contains <b>exactly one file</b>: <span class="file">START_HERE.md</span>. The block and the NOTES.md template are both inside it — nothing else to download.</p>
   </div>
 
   <div class="card">
-    <h2>What's inside</h2>
-    <table>
-      <tr><th>File</th><th>What it's for</th></tr>
-      <tr><td><span class="file">START_HERE.md</span></td><td><strong>Start here.</strong> One block: fill 3 sections once, paste 1 message per session, the AI runs the rest.</td></tr>
-      <tr><td><span class="file">NOTES.md</span></td><td>The project map and current handoff (the AI keeps it updated for you).</td></tr>
-      <tr><td><span class="file">AI_WORKFLOW.md</span></td><td>The full operating protocol behind the block (reference).</td></tr>
-      <tr><td><span class="file">AGENTS.md</span></td><td>Instruction file for an AI coding agent / project worker.</td></tr>
-      <tr><td><span class="file">OPENING_MESSAGE.md</span></td><td>Start-of-session prompt (reference).</td></tr>
-      <tr><td><span class="file">WORKING_MESSAGE.md</span></td><td>Prompt for confirmed work (reference).</td></tr>
-      <tr><td><span class="file">CHECKPOINT_MESSAGE.md</span></td><td>Prompt for a material update (reference).</td></tr>
-      <tr><td><span class="file">CLOSING_ROUTINE.md</span></td><td>End-of-session checklist (reference).</td></tr>
-      <tr><td><span class="file">SECURITY_CHECKLIST.md</span></td><td>Pre-commit security checklist.</td></tr>
-      <tr><td><span class="file">GETTING_STARTED.md</span></td><td>The 7-step quick path.</td></tr>
-    </table>
+    <h2>How it works (3 lines)</h2>
+    <ol>
+      <li><b>Once:</b> create a private repo, copy the NOTES.md template, fill in <b>Goal</b>, <b>Current state</b>, <b>Repository map</b>.</li>
+      <li><b>Every session:</b> paste <b>one block</b> from START_HERE together with your NOTES.md.</li>
+      <li><b>The AI does the rest:</b> opens by reporting state and next task, drafts checkpoints in the middle, and writes the closing update at the end. You just say <i>yes / no / commit</i>.</li>
+    </ol>
   </div>
 
   <div class="card">
-    <h2>Setup in 5 steps</h2>
-    <ul>
-      <li><strong>One project, one private repository.</strong> Keep code, documents, outputs, workflows, and history there.</li>
-      <li><strong>Copy <span class="file">NOTES.md</span></strong> in and fill in Goal, Current state, and Repository map before the first commit.</li>
-      <li><strong>Start every session</strong> with <span class="file">OPENING_MESSAGE.md</span>.</li>
-      <li><strong>Work, then checkpoint</strong> after decisions and failures; close with <span class="file">CLOSING_ROUTINE.md</span>.</li>
-      <li><strong>Review before committing</strong> — read <span class="file">SECURITY_CHECKLIST.md</span> first.</li>
-    </ul>
-    <p>The repository is your project record. <span class="file">NOTES.md</span> is the map and handoff inside it — the AI session is a temporary worker.</p>
-  </div>
-
-  <div class="card">
-    <h2>The method in one line</h2>
-    <p><strong>Read the map. Inspect the repository. Work. Checkpoint when something material changes. Close with a reviewed update. Commit. Transfer from the repository, not from memory.</strong></p>
+    <h2>Sometimes asked</h2>
+    <p><b>Is it one block or eight?</b> One block. The older kit had several per-stage files; they are now in <span class="file">reference/</span> for the curious. You never need them.</p>
+    <p><b>Do I maintain the note myself?</b> No. After setup, the AI drafts every update; you review and approve.</p>
   </div>
 
   <div class="foot">
