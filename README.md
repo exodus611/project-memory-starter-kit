@@ -4,6 +4,7 @@ The official reader companion to the book **Never Start from Scratch: Give Your 
 
 **One file, one block.** `START_HERE.md` is everything you need: fill in three lines once, paste one message per AI session, the AI runs the rest. The `reference/` folder holds the optional detailed guides — you never need them.
 
+- The book on Amazon: https://www.amazon.com/dp/B0HKVZ3RSG (Kindle; free with Kindle Unlimited)
 - Landing page: https://exodus611.github.io/project-memory-starter-kit/
 - Download (one file): https://exodus611.github.io/project-memory-starter-kit/project-memory-starter-kit.zip
 
