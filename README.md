@@ -1,6 +1,6 @@
 # Project Memory Starter Kit — Companion
 
-The official reader companion to the book **The Project Has a Memory: How to Build with AI Without Losing Context** by Daniel Marlow.
+The official reader companion to the book **Never Start from Scratch: Give Your Projects a Memory That Never Forgets** by Daniel Marlow.
 
 **One file, one block.** `START_HERE.md` is everything you need: fill in three lines once, paste one message per AI session, the AI runs the rest. The `reference/` folder holds the optional detailed guides — you never need them.
 
