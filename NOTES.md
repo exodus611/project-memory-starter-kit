@@ -35,13 +35,13 @@ Publish a beginner-friendly public companion that clearly separates: the 267-wor
 ## Known problems
 
 - This reviewed update repairs the stale README reference from Basic v1.1 to v1.2.
-- This update adds repository-internal project-memory controls and a manual-only release preflight. Local checks pass; real GitHub Actions results still require confirmation after push.
+- Repository-internal project-memory controls are installed at commit `ff26c49e463d37311d08afd3747837df52274c16`. Strict project-memory run `37229521744` and Pages run `37229520432` completed successfully. The manual-only release preflight passes locally and still needs one deliberate GitHub dispatch.
 
 ## Next three tasks
 
-1. Confirm the strict project-memory workflow and Pages deployment are green on the resulting GitHub commit.
-2. Run the manual release preflight once on GitHub and record the result before adding any automatic trigger.
-3. Keep the public product ladder accurate and avoid changing Basic or the complete Reader Kit without a material reason.
+1. Run the manual release preflight once on GitHub and record the result before adding any automatic trigger.
+2. Keep the public product ladder accurate and avoid changing Basic or the complete Reader Kit without a material reason.
+3. Update this memory whenever a public artifact, positioning claim, or workflow changes.
 
 ## External services and dependencies
 
@@ -51,4 +51,4 @@ Publish a beginner-friendly public companion that clearly separates: the 267-wor
 
 ## Recent sessions
 
-- 2026-10-04 — Audited whether the repository itself follows the complete Reader Kit. Prepared durable memory, concise repository instructions, strict SHA-pinned `statefile`, and a manual-only pinned `releasecheck`. Local strict memory, artifact equality, ZIP, links, English, YAML, and release preflight checks pass; no files are committed yet.
+- 2026-10-04 — Installed durable memory, concise repository instructions, strict SHA-pinned `statefile`, and a manual-only pinned `releasecheck`. Local artifact checks and release preflight pass; the first strict project-memory run and Pages deployment completed successfully on commit `ff26c49`.
