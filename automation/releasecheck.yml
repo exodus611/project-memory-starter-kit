@@ -1,0 +1,45 @@
+name: Release preflight
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+env:
+  # Change this after inspecting where this project creates release artifacts.
+  RELEASE_FOLDER: dist
+
+jobs:
+  check-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # If artifacts are generated, add the project's existing build step here.
+      # - name: Build release
+      #   run: your-build-command
+      - name: Confirm the configured release folder exists
+        env:
+          FOLDER: ${{ env.RELEASE_FOLDER }}
+        run: |
+          if [ ! -d "$FOLDER" ]; then
+            echo "Configured release folder does not exist: $FOLDER"
+            echo "Edit RELEASE_FOLDER in this workflow; do not scan the repository root blindly."
+            exit 1
+          fi
+      - name: Check release artifacts
+        uses: exodus611/releasecheck@v0.1.1
+        with:
+          folder: ${{ env.RELEASE_FOLDER }}
+      - name: Save the reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: releasecheck-reports
+          path: |
+            releasecheck-report.json
+            releasecheck-report.md
+          if-no-files-found: ignore

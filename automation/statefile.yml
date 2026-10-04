@@ -1,0 +1,32 @@
+name: Project memory check
+
+on:
+  push:
+    paths:
+      - 'NOTES.md'
+      - 'CLAUDE.md'
+      - 'AGENTS.md'
+      - '.github/workflows/statefile.yml'
+  pull_request:
+    paths:
+      - 'NOTES.md'
+      - 'CLAUDE.md'
+      - 'AGENTS.md'
+      - '.github/workflows/statefile.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-memory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check project memory
+        uses: exodus611/statefile@v0.2.2
+        with:
+          state-file: NOTES.md
+          max-age-days: '14'

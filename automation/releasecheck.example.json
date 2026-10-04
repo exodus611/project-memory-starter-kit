@@ -1,0 +1,14 @@
+{
+  "name": "customize this release",
+  "artifacts": [
+    "README.md"
+  ],
+  "images": [],
+  "forbid": [
+    "*.key",
+    ".env",
+    "*.bak"
+  ],
+  "online_links": false,
+  "ignore": []
+}
