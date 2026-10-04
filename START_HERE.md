@@ -44,4 +44,4 @@ If the assistant cannot open the repository, attach `NOTES.md` and the relevant 
 
 Before ending, ask the assistant to draft the updated state, decisions, failed approaches, next three tasks, files changed, checks run, and a commit message. Review the actual diff before committing.
 
-That is enough to test the method. The complete copy-ready workflow is inside the book so the public card stays short and useful.
+That is enough to test the basic method. Mid-session checkpoints and the complete copy-ready workflow are inside the book so the public card stays short and useful.
