@@ -1,10 +1,8 @@
 name: Release preflight
 
 on:
+  # Start manually. Add a version-tag trigger only after one green CI run.
   workflow_dispatch:
-  push:
-    tags:
-      - 'v*'
 
 permissions:
   contents: read
@@ -31,7 +29,8 @@ jobs:
             exit 1
           fi
       - name: Check release artifacts
-        uses: exodus611/releasecheck@v0.1.1
+        # releasecheck v0.1.1, pinned to an immutable commit
+        uses: exodus611/releasecheck@b565180b141658b5370225f10e3775b50c36059e
         with:
           folder: ${{ env.RELEASE_FOLDER }}
       - name: Save the reports

@@ -13,7 +13,7 @@ Create a private project repository and add `NOTES.md`:
 [What should this project accomplish?]
 
 ## Current state and known problems — verified [YYYY-MM-DD]
-[What exists, what works, what is blocked, and what is uncertain?]
+[What exists, works, is blocked, or is uncertain? Point to a file, test, output, or commit as evidence.]
 
 ## Repository map
 [Where are the important files and evidence?]

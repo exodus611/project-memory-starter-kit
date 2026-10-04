@@ -1,8 +1,3 @@
-# One-Block Project Setup
-
-Open your project in an AI coding agent and paste the entire block below. It is the only public setup command: the agent chooses the correct mode, installs or repairs the basic system when needed, and otherwise starts the next project session. You do not copy workflows or configure paths yourself.
-
-```text
 Run the Project Memory Quick Start for the currently open project. This is one continuous workflow: detect capabilities, inspect the project, install or repair the basic system if needed, then begin the project session. Do not ask me to choose technical functions or repeat installation steps. Do not modify any other repository.
 
 CAPABILITY — select and announce the strongest truthful mode:
@@ -50,24 +45,3 @@ SESSION — use this whenever the project is READY, and immediately after an app
 5. Wait for approval before commit/push unless explicit write-back authority for this exact task was already granted.
 
 HONEST LIMITS — state these in the installation report, not on every normal turn: statefile checks existence, freshness, structure, recognized instruction patterns, and obvious secret shapes; releasecheck checks only the configured deliverable folder. Neither proves factual truth, catches every confidential item, replaces human review, or cleans old Git history.
-```
-
-## What the user does
-
-1. Open the project in an AI coding agent.
-2. Paste the block once.
-3. Answer only questions the repository cannot answer.
-4. Approve installation/repair, then separately approve commit/push.
-
-On later sessions, paste the same block again. It detects that the project is ready, skips installation, reports the current state, and asks what to do next.
-
-## Platform results
-
-| Environment | Result from the same block |
-|---|---|
-| Coding agent with repository write access and a terminal | Installs or repairs, tests, shows the diff, then runs the basic session loop |
-| Chat with read-only GitHub access | Prepares repository-specific files or a patch but cannot apply or test them |
-| Chat with an uploaded project ZIP | Returns a ready-to-apply package; the user still places it in the repository |
-| Plain chat without project files | Explains the one connection/upload step required; it does not pretend to install |
-
-The complete Reader Kit in Appendix C adds the full checkpoint, handoff, connected-agent, permissions, and security protocol without changing this one-block user experience.
