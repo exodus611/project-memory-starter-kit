@@ -20,6 +20,8 @@ The agent is instructed to inspect first, gather any unresolved questions into o
 
 The two approvals are intentional safety boundaries—not repeated installation work. If the agent cannot prove the release build command or artifact folder from repository evidence, it must leave that part pending rather than install a misleading workflow.
 
+The same block detects platform capability. A coding agent with repository write access and a terminal can complete the installation. A read-only GitHub chat can prepare exact files but cannot apply or test them; a plain chat without project access can only tell the user what connection or upload is required. The block must state that limitation instead of claiming false automation.
+
 ## Manual fallback
 
 1. Put your durable project memory in `NOTES.md` using `START_HERE.md` as the short guide.

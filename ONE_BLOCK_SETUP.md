@@ -19,6 +19,13 @@ Operating rules:
   https://raw.githubusercontent.com/exodus611/project-memory-starter-kit/main/automation/releasecheck.example.json
 - Pin statefile to v0.2.2 and releasecheck to v0.1.1. Checks must run in this repository or its GitHub Actions environment; do not add a hosted memory service, telemetry, an external database, or uploads to the author.
 
+Capability check — choose the strongest truthful mode automatically:
+A. Full agent mode: if you can read and write repository files and run commands, perform the complete process below.
+B. Read-only repository mode: if you can inspect a connected repository but cannot write or run commands, complete the inspection, ask unresolved questions once, and prepare a downloadable patch or complete ready-to-save files. State clearly that installation and tests have not been executed. Do not claim success or ask for push approval.
+C. Uploaded-project mode: if you have file creation but no live repository, ask once for a ZIP or the minimum missing project files, then return a ready-to-apply setup package plus exact placement instructions. Do not claim that GitHub Actions ran.
+D. Chat-only mode: if you cannot inspect project files, do not attempt generic configuration. Explain in one short message that full automation requires opening this same block in a coding agent with repository/file access, connecting a readable repository, or uploading a project ZIP. Ask the user to choose one of those three routes.
+Never downgrade silently. Name the selected mode and its limitation before planning. Do not confuse GitHub read access with permission to edit, commit, push, or run a terminal.
+
 Phase 1 — inspect and ask once:
 1. Determine whether NOTES.md, STATE.md, or an equivalent memory file already exists. Prefer preserving the established filename; for a new setup use NOTES.md.
 2. Determine the repository's existing agent-instruction file, if any.
@@ -55,3 +62,14 @@ You paste one instruction block. The agent handles inspection, setup, and testin
 2. approval before it commits or pushes.
 
 Those are safety boundaries, not manual installation work.
+
+## Where full automation works
+
+| Environment | Result from the same block |
+|---|---|
+| Coding agent with repository write access and a terminal | Full inspection, installation, local tests, diff, then approval-gated commit/push |
+| Chat with a read-only GitHub connection | Repository-specific files or patch are prepared, but cannot be applied or tested automatically |
+| Chat that accepts a project ZIP and can create downloads | A ready-to-apply setup package is returned; the user still applies it to the repository |
+| Plain chat with no project-file access | Guidance only; truthful automatic installation is impossible |
+
+The prompt cannot manufacture permissions that the product does not provide. For the least manual experience, use a coding-agent mode that can edit the checked-out repository and run a terminal.
