@@ -14,7 +14,7 @@ The checks run in **your own repository and GitHub Actions environment**. There 
 
 ## Recommended: paste one block into your agent
 
-Open the repository in an AI coding agent and paste [`UNIVERSAL_PROJECT_BLOCK.txt`](../UNIVERSAL_PROJECT_BLOCK.txt). Do not copy workflows or configure paths yourself. [`ONE_BLOCK_SETUP.md`](../ONE_BLOCK_SETUP.md) explains the modes and expected result.
+Open the repository in an AI coding agent and paste [`BASIC_PROJECT_BLOCK.txt`](../BASIC_PROJECT_BLOCK.txt). Do not copy workflows or configure paths yourself. [`ONE_BLOCK_SETUP.md`](../ONE_BLOCK_SETUP.md) explains the modes and expected result.
 
 The agent inspects first and decides whether to install, repair, or start a normal project session. For installation it gathers unresolved questions into one message, requests one approval, installs and tests everything it can establish safely, shows the diff, and then requests separate approval before commit or push. On later sessions the same block skips installation and asks what to do next.
 
