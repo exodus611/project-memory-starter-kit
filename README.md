@@ -10,7 +10,7 @@ The public Basic Block does not install automated checks. The [`automation/`](au
 
 The same block detects whether the current product has full repository and terminal access, read-only GitHub access, uploaded files, or chat only. Full automatic installation requires a coding-agent environment that can edit files and run commands; less capable chats return the strongest truthful fallback rather than claiming work they could not perform.
 
-**The Reader Kit guides the work. statefile checks the memory. releasecheck checks what you ship.** `BASIC_PROJECT_BLOCK.txt` is the canonical public Basic Block v1.1; the older `UNIVERSAL_PROJECT_BLOCK.txt` URL is retained as an identical compatibility copy, not a second edition. The canonical complete Universal Master Block v3.1 is included inside the book. It contains the full `NOTES.md` template, repository instructions, opening, working, checkpoint and closing messages, connected-agent guidance, permissions model, and the complete security review.
+**The Reader Kit guides the work. statefile checks the memory. releasecheck checks what you ship.** `BASIC_PROJECT_BLOCK.txt` is the canonical public Basic Block v1.2; the older `UNIVERSAL_PROJECT_BLOCK.txt` URL is retained as an identical compatibility copy, not a second edition. The canonical complete Universal Master Block v3.1 is included inside the book. It contains the full `NOTES.md` template, repository instructions, opening, working, checkpoint and closing messages, connected-agent guidance, permissions model, and the complete security review.
 
 - Read or download the Quick Start Card: https://exodus611.github.io/project-memory-starter-kit/
 - Copy the one project block: [`BASIC_PROJECT_BLOCK.txt`](BASIC_PROJECT_BLOCK.txt)

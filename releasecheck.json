@@ -1,0 +1,20 @@
+{
+  "name": "Project Memory Starter Kit",
+  "artifacts": [
+    "index.html",
+    "BASIC_PROJECT_BLOCK.txt",
+    "UNIVERSAL_PROJECT_BLOCK.txt",
+    "ONE_BLOCK_SETUP.md",
+    "START_HERE.md",
+    "project-memory-starter-kit.zip",
+    "README.md",
+    "AGENTS.md",
+    "NOTES.md",
+    "automation/*",
+    "scanner-demo/index.html",
+    ".github/workflows/*"
+  ],
+  "forbid": ["*.key", ".env", "*.bak"],
+  "online_links": false,
+  "ignore": [".nojekyll"]
+}
