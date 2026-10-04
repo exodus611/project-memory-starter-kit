@@ -12,15 +12,15 @@ The checks run in **your own repository and GitHub Actions environment**. There 
 - Run `statefile` when project memory changes on a push or pull request, and manually when you want a health check.
 - Run `releasecheck` when preparing a release: manually or on a version tag. Do not point it blindly at the whole repository.
 
-## Install with an AI coding agent
+## Recommended: paste one block into your agent
 
-Give your agent this request from the root of your repository:
+Open the repository in an AI coding agent and paste [`ONE_BLOCK_SETUP.md`](../ONE_BLOCK_SETUP.md). Do not copy workflows or configure paths yourself.
 
-> Inspect this repository before changing anything. Read the Project Memory Quick Start Card and the files in its `automation/` folder. Identify the existing instruction file, the intended project-memory filename, the command that builds release artifacts, and the exact folder containing them. Propose a minimal installation using `NOTES.md`, `statefile` v0.2.2, and `releasecheck` v0.1.1. Configure the workflow paths and add the existing build command when CI must create the release folder; do not guess or scan the entire repository as the release folder. Preserve existing content and permissions. Explain what will run and when, show me the complete diff, and wait for my approval before committing or pushing.
+The agent is instructed to inspect first, gather any unresolved questions into one message, request one approval, install and test everything it can establish safely, show the diff, and then request separate approval before commit or push.
 
-That request intentionally requires inspection, explanation, a diff, and approval. It is not permission to publish or expose secrets.
+The two approvals are intentional safety boundaries—not repeated installation work. If the agent cannot prove the release build command or artifact folder from repository evidence, it must leave that part pending rather than install a misleading workflow.
 
-## Manual installation
+## Manual fallback
 
 1. Put your durable project memory in `NOTES.md` using `START_HERE.md` as the short guide.
 2. Copy `statefile.yml` to `.github/workflows/statefile.yml`.
