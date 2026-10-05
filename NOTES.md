@@ -54,6 +54,7 @@ Publish a beginner-friendly public companion that clearly separates: the 267-wor
 
 ## Recent sessions
 
+- 2026-10-05 — Re-encrypted the Reader Kit page from the clarified canonical Master Block so the copied/downloaded block includes the same-message project-brief guidance and matches canonical SHA `af8871d9…`. The reader code and URL remain unchanged.
 - 2026-10-05 — Clarified the one-block input flow across the Basic source, landing page, README, and encrypted copy page: paste the block first, then add a plain-language new-project brief or current task directly below it in the same message. Existing repositories may omit that brief when evidence already establishes the goal.
-- 2026-10-05 — Published the encrypted mobile copy page at commit `35eb9bd`. Strict project memory and Pages deployment are green. A fresh fetch of the live ciphertext decrypts to canonical SHA `310c7e1b…`; wrong-code rejection passes; public HTML exposes neither plaintext nor the 100-bit reader code. The Kindle manuscript remains unchanged pending a human mobile test.
+- 2026-10-05 — Published the encrypted mobile copy page at commit `35eb9bd`. Strict project memory and Pages deployment are green. A fresh fetch of the live ciphertext decrypts to canonical SHA `af8871d9…`; wrong-code rejection passes; public HTML exposes neither plaintext nor the 100-bit reader code. The Kindle manuscript remains unchanged pending a human mobile test.
 - 2026-10-04 — Installed durable memory, concise repository instructions, strict SHA-pinned `statefile`, and a manual-only pinned `releasecheck`. Local artifact checks and release preflight pass; the latest strict project-memory and Pages runs are green on commit `7ab02b8`.
