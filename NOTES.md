@@ -10,7 +10,7 @@ Publish a beginner-friendly public companion that clearly separates: the 267-wor
 - `project-memory-starter-kit.zip` contains only the 267-word `START_HERE.md` manual card.
 - GitHub Pages run `37220039069` completed successfully for commit `c1b6b6e`.
 - The `automation/` templates remain public for inspection and for use by the complete Universal Master Block; the Basic Block does not install them.
-- An encrypted Reader Kit copy page is included in the current reviewed update at `reader-kit/index.html`. It contains ciphertext only; the private reader code is stored outside this public repository. First GitHub Pages deployment and live mobile verification are pending.
+- The encrypted Reader Kit copy page is live from commit `35eb9bd1f21491e5945b1ae8ef153a349fca3293`. Project-memory run `37269435489` and Pages run `37269434480` completed successfully. Live ciphertext decrypts to the exact canonical SHA; wrong-code rejection passes; neither plaintext nor reader code is present in the public HTML. Human mobile copy/download verification is still pending.
 
 ## Repository map
 
@@ -37,14 +37,14 @@ Publish a beginner-friendly public companion that clearly separates: the 267-wor
 
 - This reviewed update repairs the stale README reference from Basic v1.1 to v1.2.
 - Repository-internal project-memory controls are installed. Latest strict project-memory run `37229610504` and Pages run `37229610272` completed successfully on commit `7ab02b8`.
-- The complete Master Block is about 11,000 characters and spans roughly nine Kindle screens. Appendix-only copying is a real usability problem; the encrypted copy page passes local cryptographic checks and is approved for publication, but is not yet linked from the book.
+- The complete Master Block is about 11,000 characters and spans roughly nine Kindle screens. The encrypted copy page is now live and machine-verified, but it is not yet linked from the book and still needs a human mobile copy/download test.
 - The manual-only release preflight passes locally and still needs one deliberate GitHub dispatch.
 
 ## Next three tasks
 
-1. Review the encrypted Reader Kit page on a real mobile browser; confirm one-tap unlock, full copy, TXT download, wrong-code rejection, and exact plaintext hash.
-2. After separate approval, publish the encrypted page and run the manual GitHub release preflight.
-3. Only after the page is proven live, add its one-tap link and fallback reader code to the private Kindle manuscript and consider one final EPUB update.
+1. Test the live encrypted page on a real mobile browser; confirm one-tap unlock, full copy, and TXT download.
+2. Run the manual GitHub release preflight and record the result before adding any automatic trigger.
+3. Only after the human mobile test passes, add the one-tap link and fallback reader code to the private Kindle manuscript and consider one final EPUB update.
 
 ## External services and dependencies
 
@@ -54,5 +54,5 @@ Publish a beginner-friendly public companion that clearly separates: the 267-wor
 
 ## Recent sessions
 
-- 2026-10-05 — Approved the encrypted mobile copy page for GitHub Pages publication after local validation. AES-GCM decryption returns the canonical bytes and SHA; a wrong code fails; neither plaintext nor the 100-bit reader code appears in the public HTML. The Kindle manuscript remains unchanged until the live page is verified.
+- 2026-10-05 — Published the encrypted mobile copy page at commit `35eb9bd`. Strict project memory and Pages deployment are green. A fresh fetch of the live ciphertext decrypts to canonical SHA `310c7e1b…`; wrong-code rejection passes; public HTML exposes neither plaintext nor the 100-bit reader code. The Kindle manuscript remains unchanged pending a human mobile test.
 - 2026-10-04 — Installed durable memory, concise repository instructions, strict SHA-pinned `statefile`, and a manual-only pinned `releasecheck`. Local artifact checks and release preflight pass; the latest strict project-memory and Pages runs are green on commit `7ab02b8`.
