@@ -4,7 +4,7 @@ A short public companion to *Never Start from Scratch: Give Your Projects a Memo
 
 Open [`START_HERE.md`](START_HERE.md) to try the basic method: create a small project map, use one opening message, and leave a reviewed handoff at the end.
 
-Open your project in an AI coding agent and paste [`BASIC_PROJECT_BLOCK.txt`](BASIC_PROJECT_BLOCK.txt). It decides automatically whether to install, repair, or begin a normal project session. Installation uses one grouped question round, one installation approval, and one separate commit/push approval; later sessions skip setup and move directly to the next task.
+Open your project in an AI coding agent and paste [`BASIC_PROJECT_BLOCK.txt`](BASIC_PROJECT_BLOCK.txt). In the same message, directly below the block, add one to three ordinary sentences describing a new project's purpose or today's task; this is optional when an existing repository already makes the goal clear. The block decides automatically whether to install, repair, or begin a normal project session. Installation uses one grouped question round, one installation approval, and one separate commit/push approval; later sessions skip setup and move directly to the next task.
 
 The public Basic Block does not install automated checks. The [`automation/`](automation/) folder remains public so readers and advanced users can inspect the GitHub Actions templates used by the complete Universal Master Block: [`statefile`](https://github.com/exodus611/statefile) and [`releasecheck`](https://github.com/exodus611/releasecheck). When used, those checks run in the user's repository; there is no hosted service or upload to the author.
 

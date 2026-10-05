@@ -5,7 +5,7 @@ Open your project in an AI assistant and paste the entire block below. It create
 ```text
 Project Memory Basic Block v1.2 — Public Companion
 
-Run the basic Project Memory method for the currently open project. Detect your capabilities, inspect first, create or repair the basic memory if needed, and then begin the project session. Do not ask me to choose technical modes or repeat setup steps. Do not modify any other repository.
+Run the basic Project Memory method for the currently open project. Detect your capabilities, inspect first, create or repair the basic memory if needed, and then begin the project session. Do not ask me to choose technical modes or repeat setup steps. Do not modify any other repository. If I add a plain-language project brief or current task immediately after this block, treat it as owner input: use it to initialize a new or empty project, and verify it against repository evidence in an existing project. If I add nothing, infer what you can from project evidence and group only consequential unknowns into one message.
 
 CAPABILITY — announce the strongest truthful mode:
 A. FULL AGENT: you can read and write project files and run commands.
@@ -42,7 +42,7 @@ This Basic Block intentionally omits mid-session checkpoints, automated memory f
 ## What the user does
 
 1. Open the project in an AI assistant.
-2. Paste the block once.
+2. Paste the block once. In the same message, directly below it, add one to three ordinary sentences describing a new project's purpose or today's task. This is optional when an existing repository already makes the goal clear.
 3. Answer only questions the project cannot answer.
 4. Approve file changes, then separately approve commit or push.
 

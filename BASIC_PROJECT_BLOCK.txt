@@ -1,6 +1,6 @@
 Project Memory Basic Block v1.2 — Public Companion
 
-Run the basic Project Memory method for the currently open project. Detect your capabilities, inspect first, create or repair the basic memory if needed, and then begin the project session. Do not ask me to choose technical modes or repeat setup steps. Do not modify any other repository.
+Run the basic Project Memory method for the currently open project. Detect your capabilities, inspect first, create or repair the basic memory if needed, and then begin the project session. Do not ask me to choose technical modes or repeat setup steps. Do not modify any other repository. If I add a plain-language project brief or current task immediately after this block, treat it as owner input: use it to initialize a new or empty project, and verify it against repository evidence in an existing project. If I add nothing, infer what you can from project evidence and group only consequential unknowns into one message.
 
 CAPABILITY — announce the strongest truthful mode:
 A. FULL AGENT: you can read and write project files and run commands.
