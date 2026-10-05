@@ -12,6 +12,7 @@
     "NOTES.md",
     "automation/*",
     "scanner-demo/index.html",
+    "reader-kit/index.html",
     ".github/workflows/*"
   ],
   "forbid": ["*.key", ".env", "*.bak"],
