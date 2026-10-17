@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Project Memory Quick Start Card</title>
-<meta name="description" content="A short project-memory method with optional automated freshness and release checks for ordinary AI-assisted projects.">
+<title>Project Memory Starter Kit — Stop Re-Explaining Your Project to AI</title>
+<meta name="description" content="Free starter kit that fixes the #1 problem of AI coding: long chats go dumb, new chats lose your project's details. One paste gives ChatGPT, Claude or Cursor a memory that lives in your project — free companion to the book «Never Start from Scratch».">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your AI doesn't forget your project. It loses it, one chat at a time.">
+<meta property="og:description" content="One free block keeps your project's memory outside the chat — every new session starts with everything intact. Works with ChatGPT, Claude, Cursor and any AI agent.">
+<meta property="og:url" content="https://exodus611.github.io/project-memory-starter-kit/">
+<!-- Optional: add an og:image (1200x630) later, e.g. cover.png, for rich link previews -->
 <style>
   :root {
     --ink:#EAF2FF; --muted:#A9B8CC; --panel:#131C2E; --edge:#2A3A55;
@@ -25,11 +30,17 @@
   .dot { width:8px; height:8px; border-radius:50%; background:var(--green); }
   h1 { margin:0 0 14px; font-size:42px; line-height:1.12; letter-spacing:-.02em; }
   .grad { background:linear-gradient(90deg,#7FD4FF,#4DA3FF 45%,#3DE07B); -webkit-background-clip:text; background-clip:text; color:transparent; }
-  .sub { max-width:680px; margin:0 0 30px; color:var(--muted); font-size:19px; }
+  .sub { max-width:680px; margin:0 0 14px; color:var(--muted); font-size:19px; }
+  .sub b { color:var(--ink); font-weight:600; }
   .hero { margin:8px 0 24px; padding:28px; background:rgba(19,28,46,.78); border:1px solid var(--edge); border-radius:18px; box-shadow:0 20px 60px rgba(0,0,0,.35); }
   .cta { display:inline-block; margin:4px 10px 8px 0; padding:15px 24px; color:#06130B; background:linear-gradient(90deg,#2EC86B,#3DE07B); border-radius:12px; font-weight:800; text-decoration:none; }
   .cta.ghost { color:var(--ink); background:transparent; border:1px solid var(--edge); }
+  .cta.book { color:#0A1020; background:linear-gradient(90deg,#FFB454,#FFD97B); }
   .note { margin:12px 0 0; color:var(--muted); font-size:14px; }
+  .pain { margin:0 0 26px; padding:20px 22px; background:rgba(10,16,32,.55); border-left:3px solid #FF6B6B; border-radius:0 14px 14px 0; }
+  .pain p { margin:0 0 8px; color:var(--muted); font-size:15.5px; }
+  .pain p:last-child { margin-bottom:0; }
+  .pain b { color:#FFB4B4; font-weight:600; }
   .steps { display:grid; gap:14px; }
   .step { display:flex; gap:16px; align-items:flex-start; padding:18px 20px; background:rgba(13,20,36,.62); border:1px solid var(--edge); border-radius:14px; }
   .num { flex:0 0 auto; display:flex; align-items:center; justify-content:center; width:38px; height:38px; color:#06130B; background:linear-gradient(135deg,#4DA3FF,#3DE07B); border-radius:11px; font-size:18px; font-weight:800; }
@@ -48,72 +59,90 @@
   .tool strong { display:block; margin-bottom:4px; color:#9ED6FF; }
   .tool span { color:var(--muted); font-size:14px; }
   .auto-link { display:inline-block; margin-top:18px; color:#7FD4FF; font-weight:700; }
-  @media (max-width:680px) { h1 { font-size:34px; } .auto-grid { grid-template-columns:1fr; } }
+  @media (max-width:680px) { h1 { font-size:32px; } .auto-grid { grid-template-columns:1fr; } }
   .foot { margin-top:40px; padding-top:20px; color:#7C8AA0; border-top:1px solid var(--edge); font-size:13px; line-height:1.7; }
   .foot a { color:#7FD4FF; }
 </style>
 </head>
 <body>
 <main class="wrap">
-  <span class="eyebrow"><span class="dot"></span> Public quick start</span>
-  <h1>Let the project <span class="grad">remember itself</span></h1>
-  <p class="sub">One block for your AI coding agent. It installs or repairs project memory when needed; otherwise it reads the evidence and asks what to do next.</p>
+  <span class="eyebrow"><span class="dot"></span> Free starter kit</span>
+  <h1>Give your project <span class="grad">a memory that never forgets</span></h1>
+  <p class="sub">Long chats go slow and dumb. New ones remember <b>you</b> — but lose the decisions, the fixes, the details. And real projects take 10, 15, 20 versions across many chats. <b>One paste moves the memory out of the chat and into the project itself.</b> Any new session, on any AI, picks up exactly where you left off.</p>
+
+  <div class="pain">
+    <p><b>The fix is one paste.</b> Memory moves out of the chat and into the project itself — so every new session, on any AI, starts with everything exactly where you left it.</p>
+  </div>
 
   <section class="hero" aria-label="Start here">
-    <a class="cta" href="BASIC_PROJECT_BLOCK.txt">Open the one block</a>
+    <a class="cta" href="BASIC_PROJECT_BLOCK.txt">⚡ Get the free block</a>
+    <a class="cta ghost" href="project-memory-starter-kit.zip" download>↓ Quick-start card (1 page)</a>
     <a class="cta ghost" href="ONE_BLOCK_SETUP.md">How it works</a>
-    <a class="cta ghost" href="project-memory-starter-kit.zip" download>&#8595; Download 267-word card</a>
-    <a class="cta ghost" href="https://www.amazon.com/dp/B0HKVZ3RSG" target="_blank" rel="noopener">Complete Reader Kit</a>
-    <p class="note"><b>Open the one block</b> is the automatic public Basic Block. The ZIP contains only the 267-word manual card. The complete Master Block is inside the book.</p>
+    <a class="cta book" href="https://www.amazon.com/dp/B0HKVZ3RSG" target="_blank" rel="noopener">📖 The full book →</a>
+    <p class="note"><b>Get the free block</b> is the complete public Basic Block — paste it into your AI agent and go. The card is the 1-page cheat sheet. The complete system is inside the book <b>«Never Start from Scratch»</b>.</p>
   </section>
 
-  <section class="steps" aria-label="One-block setup in three steps">
+  <!--
+  ============================================================
+  EMAIL CAPTURE — 1 minute to activate (choose ONE):
+  Option A (easiest): create a free Buttondown account at
+    https://buttondown.email → copy your embed form → paste it
+    inside this <section>. Free up to 100 subscribers.
+  Option B: make a Google Form (one field: email) → Send →
+    "<>" embed HTML → paste the iframe here.
+  Then link every video bio to THIS page — every subscriber is
+  a future book buyer. The 4–5 letter sequence selling the book
+  is what turns downloads into sales.
+  ============================================================
+  -->
+
+  <section class="steps" aria-label="How it works in three steps">
     <article class="step">
       <div class="num">1</div>
-      <div><h2>Paste once</h2><p>Open your project in an AI coding agent and paste the single setup block. In the same message, add your project idea or today's task directly below it in ordinary words. For an established repository this is optional. You do not copy workflows or choose paths by hand.</p></div>
+      <div><h2>Paste once</h2><p>Open your project in your AI tool — ChatGPT, Claude, Cursor, whatever you use. Paste the block, then describe your project or today's task in ordinary words below it. No workflows to copy, no settings to choose.</p></div>
     </article>
     <article class="step">
       <div class="num">2</div>
-      <div><h2>The agent chooses the path</h2><p>It detects whether the project needs setup, repair, or an ordinary session. Only unresolved questions are grouped into one short message.</p></div>
+      <div><h2>It sets itself up</h2><p>The agent checks what your project needs — first-time setup, a repair, or just a normal session — and does it. Anything genuinely unclear comes back as one short question, not twenty.</p></div>
     </article>
     <article class="step">
       <div class="num">3</div>
-      <div><h2>Install once, then work</h2><p>New projects get one approval for setup and one for commit/push. Ready projects skip installation, report their state, and ask whether to start the proposed next task.</p></div>
+      <div><h2>Never re-explain again</h2><p>Close the chat. Open a new one tomorrow — or a different AI entirely. It reads the project's own memory and continues from the exact spot, with every decision and detail intact.</p></div>
     </article>
   </section>
 
-  <section class="auto" aria-labelledby="automation-title">
-    <h2 id="automation-title">What the complete Reader Kit adds</h2>
-    <p>The public Basic Block keeps setup simple. The complete book adds the advanced behavioral protocol and optional mechanical checks, without a hosted memory service.</p>
+  <section class="auto" aria-labelledby="book-title">
+    <h2 id="book-title">What the book adds</h2>
+    <p>The free block covers everyday work. <b>«Never Start from Scratch»</b> by Daniel Marlow is the complete system for longer and higher-stakes projects:</p>
     <div class="auto-grid">
-      <div class="tool"><strong>Reader Kit</strong><span>Guides the work and the handoff.</span></div>
-      <div class="tool"><strong>statefile</strong><span>Checks that project memory exists, is fresh, structured, and lacks obvious secret patterns.</span></div>
-      <div class="tool"><strong>releasecheck</strong><span>Checks the configured deliverable folder before you send or publish it.</span></div>
+      <div class="tool"><strong>Pause anywhere</strong><span>Close the laptop mid-task. Tomorrow's session resumes to the letter — not to a vague summary.</span></div>
+      <div class="tool"><strong>Long chats stop going dumb</strong><span>Checkpoints keep work crisp instead of watching the AI slow down and drift as the chat grows.</span></div>
+      <div class="tool"><strong>Built-in safety</strong><span>Automated checks warn you before passwords, keys, or half-finished files slip into a commit or a release.</span></div>
     </div>
-    <a class="auto-link" href="https://www.amazon.com/dp/B0HKVZ3RSG" target="_blank" rel="noopener">See the complete Reader Kit &#8594;</a>
-    <p class="note">The Basic Block does not install these checks. In the complete setup they run in the user's own repository and GitHub Actions environment; they do not upload project files to the author.</p>
+    <a class="auto-link" href="https://www.amazon.com/dp/B0HKVZ3RSG" target="_blank" rel="noopener">Get «Never Start from Scratch» on Amazon →</a>
+    <p class="note">Everything runs in <i>your</i> repository and your own GitHub Actions — nothing is uploaded to the author or any hosted service. Kindle Unlimited members read free.</p>
   </section>
 
   <section class="qa" style="margin-top:20px">
-    <h2>Can I keep using the free Basic Block?</h2>
-    <p><b>Yes.</b> It is enough to create project memory and maintain a simple start-to-close loop for an ordinary project. It intentionally omits automated freshness and release checks, mid-session checkpoints, and the full security protocol.</p>
+    <h2>Does it work with ChatGPT / Claude / Cursor / …?</h2>
+    <p><b>Yes — it adapts to the tool.</b> In a coding agent with project access it installs and self-tests everything. In a read-only chat it hands you exact files to paste. In a plain chat it guides you step by step. It always tells you honestly which mode it's in instead of pretending.</p>
   </section>
   <section class="qa">
-    <h2>What does the complete Reader Kit add?</h2>
-    <p>It is designed for longer and higher-stakes work: mid-session checkpoints, context-compaction protection, multi-agent handoff, evidence discipline, connected-agent permissions, recovery after failures, and the complete closing and security protocol.</p>
+    <h2>Can I stay on the free block forever?</h2>
+    <p><b>Of course.</b> It covers the core loop: project memory, clean session starts, clean handoffs. The book exists for when projects get longer, riskier, or shared between several AIs — checkpoints, failure recovery, the full security protocol.</p>
   </section>
   <section class="qa">
-    <h2>Why keep memory with the project?</h2>
-    <p>The AI tool can change. A human-readable, versioned project record remains inspectable, portable, and under your control.</p>
+    <h2>Why keep memory inside the project?</h2>
+    <p>AI tools change every year — today's favorite model is tomorrow's old news. A readable, versioned project record belongs to <b>you</b>: inspectable, portable, and impossible to lose with a subscription.</p>
   </section>
   <section class="qa">
-    <h2>Will the same block work outside a full coding agent?</h2>
-    <p><b>It adapts, but permissions matter.</b> A coding agent with repository and terminal access can install and test everything. A read-only GitHub chat can prepare exact files but cannot apply them; a plain chat without project files can only guide setup. The block identifies the mode instead of pretending it completed work.</p>
+    <h2>Is my code sent anywhere?</h2>
+    <p><b>No.</b> There is no hosted memory service. Everything lives as plain text in your own repository, and the optional automated checks run in your own environment.</p>
   </section>
 
   <footer class="foot">
-    <p>This is the public companion to <a href="https://www.amazon.com/dp/B0HKVZ3RSG" target="_blank" rel="noopener"><em>Never Start from Scratch: Give Your Projects a Memory That Never Forgets</em></a> by Daniel Marlow.</p>
-    <p>You may copy, adapt, and use the Quick Start Card for your own personal and commercial projects. Unofficial guide — not affiliated with or endorsed by GitHub, Inc. GitHub® is a registered trademark of GitHub, Inc.</p>
+    <p>This is the free companion to <a href="https://www.amazon.com/dp/B0HKVZ3RSG" target="_blank" rel="noopener"><em>Never Start from Scratch: Give Your Projects a Memory That Never Forgets</em></a> by Daniel Marlow.</p>
+    <p>You may copy, adapt, and use the Starter Card for your own personal and commercial projects. Unofficial guide — not affiliated with or endorsed by GitHub, Inc. GitHub® is a registered trademark of GitHub, Inc. Not affiliated with Anthropic, OpenAI, or Cursor.</p>
   </footer>
 </main>
 </body>
